@@ -9,7 +9,7 @@ git clone https://github.com/shirobu2400/mmdpi<br>
 cd mmdpi<br>
 cmake .. (-Dpi=on でラズベリーパイ上 -Dbullet=on で物理演算込み)<br>
 make -j N (N はコンパイルスレッド数)<br>
-make install 
+make install <br>
 cd ..<br>
 <br>
 make<br>
@@ -25,3 +25,8 @@ mmdpipy.boneRotY(bone_name, roty) => ボーン名に対応するボーンをy軸
 mmdpipy.boneRotZ(bone_name, rotz) => ボーン名に対応するボーンをz軸回転<br>
 mmdpipy.setProjectionMatrix(width, height) => スクリーンの幅と高さで投射行列を生成する<br>
 mmdpipy.step01() => モーションを一ステップ進める<br>
+
+# 注意事項
+プロタイプです。
+動作の保証はありません。
+
