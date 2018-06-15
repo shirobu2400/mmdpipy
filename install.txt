@@ -1,0 +1,2 @@
+sudo apt-get install libboost-dev libboost-python-dev
+pip install pyopengl
