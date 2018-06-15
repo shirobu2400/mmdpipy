@@ -5,14 +5,11 @@
 apt-get install libboost-dev libboost-python-dev<br>
 pip install pyopengl<br>
 <br>
-git clone https://github.com/shirobu2400/mmdpi<br>
-cd mmdpi<br>
-cmake .. (-Dpi=on でラズベリーパイ上 -Dbullet=on で物理演算込み)<br>
-make -j N (N はコンパイルスレッド数)<br>
-make install <br>
-cd ..<br>
+mmdpi をインストール済み
 <br>
 make<br>
+RaspberryPi の場合<br>
+make pi<br>
 
 # メソッド群
 mmdpipy.load(model_name) => モデル名でモデル読み込み<br>
