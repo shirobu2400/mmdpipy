@@ -2,14 +2,15 @@
  mmdpi を使って Python から pmd, pmx モデルを動かすことのできるライブラリです。
  
  # インストール手順
-apt-get install libboost-dev libboost-python-dev<br>
+apt-get install libboost-dev libboost-python-dev python-opengl<br>
 pip install pyopengl<br>
 <br>
 mmdpi をインストール済み
 <br>
-make<br>
-RaspberryPi の場合<br>
-make pi<br>
+cmake<br>
+<br>
+RaspberryPi に一応対応しています.(多分..)<br>
+RaspberryPi のレガシードライバには非対応(黒い画面が出るだけ.)<br>
 
 # メソッド群
 mmdpipy.load(model_name) => モデル名でモデル読み込み<br>
