@@ -1,4 +1,4 @@
-﻿#!/usr/bin/python
+#!/usr/bin/python
 #-*-coding:utf-8-*-
 
 from OpenGL.GL import *
@@ -7,7 +7,6 @@ from OpenGL.GLUT import *
 import sys
 
 import mmdpipy
-
 
 pmm = mmdpipy.mmdpipy()
 RotationAxis = [0,0,0]

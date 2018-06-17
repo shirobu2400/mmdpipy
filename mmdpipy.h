@@ -1,4 +1,4 @@
-﻿
+
 #define BOOST_PYTHON_STATIC_LIB
 #include "mmdpi.h"
 #include <boost/python.hpp>
@@ -37,6 +37,7 @@ public:
 	void set_projection_matrix( float width, float height );
 
 	void step01( void );
+	void set_fps( int fps );
 
 	mmdpipy();
 	~mmdpipy();

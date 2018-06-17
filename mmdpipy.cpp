@@ -1,4 +1,4 @@
-﻿
+
 #define BOOST_PYTHON_STATIC_LIB
 #include "mmdpi.h"
 #include "mmdpipy.h"
@@ -11,12 +11,14 @@ bool mmdpipy::load( const char* name )
 		return false;
 	return true;
 }
+
 bool mmdpipy::vmdload( const char* name )
 {
 	if( pm->vmd_load( name ) )
 		return false;
 	return true;
 }
+
 void mmdpipy::draw( void )
 {
 	if( pm )
@@ -123,6 +125,11 @@ void mmdpipy::step01( void )
 		( *pm->get_vmd( 0 ) ) += 1.0;
 }
 
+void mmdpipy::set_fps( int fps )
+{
+	pm->set_fps( fps );
+}
+
 mmdpipy::mmdpipy()
 {
 	pm = new mmdpi();
@@ -131,7 +138,6 @@ mmdpipy::~mmdpipy()
 {
 	delete pm;
 }
-
 
 BOOST_PYTHON_MODULE( mmdpipy )
 {
@@ -146,6 +152,6 @@ BOOST_PYTHON_MODULE( mmdpipy )
 	.def( "boneRotZ", &mmdpipy::set_bonerotZ )
 	.def( "setProjectionMatrix", &mmdpipy::set_projection_matrix )
 	.def( "step01", &mmdpipy::step01 )
-	// .def( "set_fps", &mmdpipy::set_fps )
+	.def( "set_fps", &mmdpipy::set_fps )
 	;
 }
