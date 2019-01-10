@@ -25,6 +25,6 @@ mmdpipy.setProjectionMatrix(width, height) => スクリーンの幅と高さで�
 mmdpipy.step01() => モーションを一ステップ進める<br>
 
 # 注意事項
-プロタイプです。
+プロトタイプです。
 動作の保証はありません。
 
