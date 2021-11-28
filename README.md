@@ -1,5 +1,6 @@
 ﻿# mmdpipy
- mmdpi を使って Python から pmd, pmx モデルを動かすことのできるライブラリです。
+ mmdpi を使って Python から pmd, pmx モデルを動かすことのできるライブラリです。<br>
+ [New] python のみで動作するライブラリができました。=> [mmdpy](https://github.com/shirobu2400/mmdpy)
  
  # インストール手順
 apt-get install libboost-dev libboost-python-dev python-opengl<br>
